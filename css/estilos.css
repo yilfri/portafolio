@@ -1,0 +1,266 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: #fff;
+    font-family: 'Open Sans', Sans-serif;
+    font-size: 16px;
+}
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+/* ----- ----- Header ----- ----- */
+header{
+    background: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    max-height: 600px;
+}
+header .menu{
+    text-align: right;
+}
+header .menu a{
+    font-size: 1em;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin-top: 40px;
+    margin-right: 20px;
+    padding-bottom: 9px;
+    border-bottom: 2px solid transparent;
+}
+header .menu a:hover{
+    border-bottom: 2px solid #fff;
+    transition: .3s;
+}
+
+header .contenedor-texto{
+    display: flex;
+    justify-content: center;
+}
+header .contenedor-texto .texto{
+    border-radius: 3px;
+    border: 2px solid rgba(255,255,255,.5);
+    padding: 10px 60px;
+    margin: 130px 0;
+}
+
+header .contenedor-texto .texto h1{
+    font-size: 50px;
+    margin: 0;
+    margin-bottom: 10px;
+    color: #fff;
+    font-weight: 600;
+    line-height: 50px;
+    text-align: center;
+}
+header .contenedor-texto .texto h2{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    font-weight: 300;
+    line-height: 25px;
+}
+/* ----- ----- Main ----- ----- */
+.main .acerca-de{
+    text-align: center;
+}
+.main .acerca-de .foto{
+    margin-top: -100px;
+}
+.main .acerca-de .foto img{
+    width: 200px;
+    border: 5px solid rgba(255,255,255,.3);
+    border-radius: 100px;
+    vertical-align: top;
+    
+}
+.main .acerca-de .texto{
+    color: #5a5a5a;
+    font-weight: 600px;
+    line-height: 27px;
+    margin: 40px 0;
+}
+.main .acerca-de .texto h3{
+    color: #dd820d; 
+    font-weight: 300;
+    font-size: 30px;
+}
+.main .acerca-de .texto span{
+    font-weight: 600;
+    color: #3895ea;
+}
+
+/* ----- ----- Trabajos ----- ----- */
+
+.trabajos{
+    background: #f2f2f2;
+}
+.trabajos .contenedor h3{
+    margin: 10px;
+    padding: 30px;
+    color: #323068; 
+    font-weight: 300;
+    font-size: 30px;
+    text-align:center;
+}
+.trabajos .contenedor .contenedor-trabajo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+.trabajos .contenedor .contenedor-trabajo .proyecto{
+    width: 23%;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.trabajos .contenedor .contenedor-trabajo .proyecto:hover{
+    transition: .3s;
+    box-shadow: 7px 7px 5px rgba(146, 146, 146, 0.3);
+}
+.trabajos .contenedor .contenedor-trabajo .proyecto .thumb{
+    width: 100%;
+}
+.trabajos .contenedor .contenedor-trabajo .proyecto .thumb img{
+    width: 100%;
+    border-radius: 3px;
+    vertical-align: top;
+}
+.trabajos .contenedor .contenedor-trabajo .proyecto .descripcion{
+    text-align: center;
+}
+.trabajos .contenedor .contenedor-trabajo .proyecto .descripcion .nombre{
+    color: #3895ea;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.trabajos .contenedor .contenedor-trabajo .proyecto .descripcion .categoria{
+    font-size: 14px;
+    color: #5a5a5a;
+    font-weight: 600;
+    margin-top: 0;
+}
+/* ----- ----- Trabajos ----- ----- */
+
+footer .contacto .contenedor{
+    width: 50%;
+    margin: 60px auto;
+}
+footer .contacto h3{
+    margin: 10px;
+    padding-bottom: 30px;
+    color: #0096f4; 
+    font-weight: 300;
+    font-size: 30px;
+    text-align: center;
+}
+footer .contacto .formulario{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .contacto .formulario input[type=text],
+footer .contacto .formulario input[type=email],
+footer .contacto .formulario textarea{
+    border: 3px solid #e2dede;
+    border-radius: 5px;
+    padding: 15px 20px;
+    color: #0096f4; 
+}
+footer .contacto .formulario input[type=text]::-webkit-input-placeholder,
+footer .contacto .formulario input[type=email]::-webkit-input-placeholder,
+footer .contacto .formulario textarea::placeholder{
+    color: #c4b9b9;
+}
+
+footer .contacto .formulario input[type=text],
+footer .contacto .formulario input[type=email]{
+    width: 49%;
+}
+footer .contacto .formulario textarea{
+    width: 100%;
+    height: 100px;
+    resize: none;
+    margin: 20px 0;
+}
+footer .contacto .formulario input[type=text]:focus,
+footer .contacto .formulario input[type=email]:focus,
+footer .contacto .formulario textarea:focus{
+    outline: none;
+    border: 3px solid #90bad4;
+    border-radius: 5px;
+}
+footer .contacto .formulario input[type=submit]{
+    margin: auto;
+    padding: 15px 50px;
+    background: #0a71fc;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #fff;
+}
+footer .contacto .formulario input[type=submit]:hover{
+    background: #4695ff;
+    transition: .2s;
+}
+
+footer .redes{
+    background: #1e2b38;
+    padding: 60px 0;
+}
+footer .redes .contenedor{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+footer .redes a{
+    color: #fff;
+    font-size: 2em;
+    padding: 15px 0px;
+    display: block;
+    width: 100%;
+    margin: 0 10px;
+    text-align: center;
+}
+
+footer .redes .twitter:hover{ background: #1da1f2; transition: .3s;}
+footer .redes .youtube:hover{ background: #ff0000; transition: .3s;}
+footer .redes .facebook:hover{ background: #3b5998; transition: .3s;}
+footer .redes .instagram:hover{ background: #e1306c; transition: .3s;}
+
+/* ----- ----- MEDIA QUERIES ----- ----- */
+
+@media screen and (max-width: 800px){
+    header .menu{
+        text-align: center;
+    }
+    .trabajos .contenedor .contenedor-trabajo .proyecto{
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    header .contenedor-texto .texto h1{
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+    header .contenedor-texto .texto h2{
+        font-size: 15px;
+    }
+    footer .contacto .formulario input[type=text],
+footer .contacto .formulario input[type=email],
+    footer .contacto .formulario textarea{
+        text-align: center;
+    }
+    footer .redes{
+        padding: 30px 0;
+    }
+    footer .redes a{
+        font-size: 1em;
+    }
+}
